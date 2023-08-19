@@ -6,7 +6,8 @@ import com.example.demo.banco.repository.modelo.Propietario;
 
 public interface IPropietarioService {
 
-	
+	public Propietario buscar ( Integer id);
+
 	public void  eliminar(Integer id);
 	public void actualizar(Propietario propietario);
 	public void insertar(Propietario propietario);

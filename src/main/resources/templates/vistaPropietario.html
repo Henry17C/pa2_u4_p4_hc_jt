@@ -1,0 +1,51 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	
+	<head>
+		<title>Listar propitarios</title>
+	</head>
+	
+	
+	<body>
+		
+	<form th:action="@{/propietarios/actualizar/{id}(id=${propietario.id})}" th:object="${propietario}" th:method="PUT" >
+		
+		<table>
+			
+			
+			
+	   <tr>
+		   <td><label>ID: </label></td>
+		   <td> <input type="text" th:field="${propietario.id}" ></td>
+	   </tr>
+		
+				
+	   <tr>
+		   <td><label>Nombre: </label></td>
+		   <td> <input type="text" th:field="${propietario.nombre}"></td>
+	   </tr>
+				
+				
+	   <tr>
+		   <td><label>Apellido: </label></td>
+		   <td> <input type="text" th:field="${propietario.apellido}" ></td>
+	   </tr>
+								
+				
+				
+		<tr>
+		   <td><label>Cedula: </label></td>
+		   <td> <input type="text"  th:field="${propietario.cedula}" ></td>
+	   </tr>
+					
+			
+			
+		</table>
+		
+		
+		<input type="submit" value="Actalizar">
+		</form>
+		
+	</body>
+	
+	
+</html>

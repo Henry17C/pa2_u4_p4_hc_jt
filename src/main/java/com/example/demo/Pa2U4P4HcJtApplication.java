@@ -39,8 +39,8 @@ public class Pa2U4P4HcJtApplication implements CommandLineRunner{
 		propietario1.setNombre("Jose");
 
 	
-	//this.iPropietarioService.insertar(propietario1);
-	//this.iPropietarioService.insertar(propietario);
+//	this.iPropietarioService.insertar(propietario1);
+//	this.iPropietarioService.insertar(propietario);
 	
 	
 	

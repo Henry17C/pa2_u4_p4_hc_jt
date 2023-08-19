@@ -1,4 +1,4 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	
 	<head>
 		<title>Listar propitarios</title>
@@ -7,20 +7,32 @@
 	
 	<body>
 		
+		<h1> Hola Mundo
+		
 		<table>
 			
 			<thead>
 				
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Cedula</th>
+				</tr>
 			</thead>
 			
-			<h1> Hola Mundo
+			
 				
 			</h1>
 			<tbody>
-				<tr th:each="propietario:${propietarios}">					
+				
+				
+				<tr th:each="propietario:${propietarios}">	
+				<td th:text="${propietario.id}"></td>				
 				<td th:text="${propietario.nombre}"></td>
 				<td th:text="${propietario.apellido}"></td>
-				<td th:text="${propietario.cedula}"></td>	
+				<td th:text="${propietario.cedula}"></td>
+					
 				</tr>
 			</tbody>
 			

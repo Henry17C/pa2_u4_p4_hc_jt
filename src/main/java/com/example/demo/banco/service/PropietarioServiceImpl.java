@@ -19,6 +19,7 @@ public class PropietarioServiceImpl implements IPropietarioService {
 	private IPropietarioRepo iPropietarioRepo;
 	
 	@Override
+	@Transactional(value = TxType.REQUIRED)
 	public void eliminar(Integer id) {
 		// TODO Auto-generated method stub
 		iPropietarioRepo.eliminar(id);
